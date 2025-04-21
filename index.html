@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyGym - Video Analysis for Workouts</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="app-header">
+  <div class="logo">
+    <h1>MyGym</h1>
+  </div>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#videos">My Videos</a></li>
+      <li><a href="#analysis">Analysis</a></li>
+      <li><a href="#help">Help</a></li>
+    </ul>
+  </nav>
+</header>
+<main id="app">
+  <section class="hero">
+    <h2>Analyze Your Workouts with AI</h2>
+    <p>Upload your workout videos and get instant feedback on your form and repetition counts.</p>
+    <button id="upload-video" class="primary-button">Upload Video</button>
+  </section>
+
+  <section id="videos" class="video-library">
+    <h2>My Videos</h2>
+    <p>Your uploaded workout videos will appear here.</p>
+    <div class="video-grid">
+      <!-- Video thumbnails will be displayed here -->
+      <div class="empty-state">
+        <p>No videos uploaded yet. Click "Upload Video" to get started.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="analysis" class="analysis-section">
+    <h2>Exercise Analysis</h2>
+    <p>Select a video to analyze your workout form and count repetitions.</p>
+    <div class="analysis-container">
+      <!-- Analysis content will be displayed here -->
+      <div class="empty-state">
+        <p>Select a video from your library to begin analysis.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="help" class="help-section">
+    <h2>How to Use MyGym</h2>
+    <div class="help-steps">
+      <div class="step">
+        <h3>1. Upload</h3>
+        <p>Upload your workout videos using the "Upload Video" button.</p>
+      </div>
+      <div class="step">
+        <h3>2. Select</h3>
+        <p>Choose a video from your library to analyze.</p>
+      </div>
+      <div class="step">
+        <h3>3. Analyze</h3>
+        <p>View your form analysis and repetition count.</p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="app-footer">
+  <p>&copy; 2025 MyGym. All rights reserved.</p>
+</footer>
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>
